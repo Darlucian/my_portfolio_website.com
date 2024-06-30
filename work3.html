@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+ <head>
+    <title>Welcome to My Home Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="viewport" content="width" device-width="initial scale 0.1">
+    <meta name="discription" content="Welcome to Darls Portfolio">
+    <link rel="stylesheet" type="text/css" href="stan.css">
+ </head>
+ <body>
+    <div class="home-container">
+        <!-- header design -->
+        <div class="header-0">
+            	<!-- navigation part -->
+			  <div class="nav-nav">
+                <span class="open-slide">
+                  <a href="#" onclick="openSlideMenu()" style="float: left;">
+                    <svg width="30" height="30">
+                      <path d="M0,5 30,5" stroke="black" stroke-width="4"/>
+                      <path d="M0,14 30,14" stroke="black" stroke-width="4"/>
+                      <path d ="M0,23 30,23" stroke="black" stroke-width="4"/>
+                      </svg>  
+                      
+                  </a>
+                </span>
+                <div id="side-menu" class="side-nav">
+                  <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                  <a href="index.html">Home</a>
+                  <a href="About.html">About</a>
+                  <a href="Proj.html">Projects</a>
+                 
+                
+                </div>
+                
+                <script type="text/javascript">
+                  function openSlideMenu(){
+                    document.getElementById('side-menu').style.width = '250px';
+                    document.getElementById('main').style.marginLeft = '250px';
+                  }
+                   function closeSlideMenu(){
+                   document.getElementById('side-menu').style.width = '0';
+                   document.getElementById('main').style.marginLeft = '0';	
+                   }
+                </script>	
+                
+              </div>
+              <div class="name-header">
+                <h4>Darl<span style="font-size: 19px; 
+                color: #014421; 
+                font-style: italic;"
+                >Portfolio</span></h4>
+              </div>
+        <div class="header-2">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li> <a href="Proj.html">Projects</a></li>
+            
+    </ul>
+        </div>
+            
+        </div>
+        <!-- code starts here  -->
+        <div class="about-1">
+          <!-- transitition with amazing background and text  -->
+          <h3>Explore my Projects <br>as a<br> <span>Full-stack Engineer</span></h3>
+        </div>
+        <div class="project-container">
+          <div class="fs">
+            <h2>Resturant Website</h2>
+            <img src="appmg/app.jpeg" width="100%">
+            <p style="font-size: 10px; font-weight: bold;">Created using HTML/CSS and JavaScript</p>
+            <p>Check out this project <a href="https://darlucian.github.io/leo_eatery_website.com/index.html">Project website link</a></p>
+          </div>
+
+          <div class="fs">
+            <h2>Mini Movie Web Application</h2>
+            <img src="appmg/mv1.png" width="100%">
+            <p style="font-size: 10px; font-weight: bold;">Created using HTML/CSS, JavaScript and React</p>
+            <p>Check out this project's snippet and lots more on my <a href="https://twitter.com/Darlington97841">Twitter Page</a></p>
+          </div>
+
+          <h3>For more updates on my latest projects please check out my <span style="color: #014421;">Twitter profile</span>
+            account and <span style="color: #014421;">LinkedIn profile.</span>
+          </h3>
+        </div>
+        </div>
+        </body>
+        </html>
